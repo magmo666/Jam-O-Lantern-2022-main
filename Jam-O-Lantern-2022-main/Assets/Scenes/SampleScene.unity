@@ -115525,6 +115525,8 @@ MonoBehaviour:
   shootingPoint: {fileID: 399840528}
   player: {fileID: 827217389}
   speed: 4
+  _firehurl: {fileID: 8300000, guid: 7d92a827f52b30545b7d7c325957eebc, type: 3}
+  _audioSource: {fileID: 0}
 --- !u!82 &1802298771
 AudioSource:
   m_ObjectHideFlags: 0
@@ -115537,15 +115539,15 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7d92a827f52b30545b7d7c325957eebc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.151
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 220
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 17.96956
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

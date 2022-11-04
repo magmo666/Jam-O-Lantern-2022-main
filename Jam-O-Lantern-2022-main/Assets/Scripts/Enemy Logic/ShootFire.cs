@@ -10,7 +10,15 @@ public class ShootFire : MonoBehaviour
     [SerializeField] private GameObject shootingPoint; //point at which it shoots from
     [SerializeField] private GameObject player;
     [SerializeField] private float speed = 4;
+    [SerializeField] private AudioClip _firehurl;
+    [SerializeField] private AudioSource _audioSource;
+    
+    void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
 
+    public AudioSource AudioSource { get => _audioSource; set => _audioSource = value; }
 
     void FixedUpdate()
     {
@@ -30,6 +38,8 @@ public class ShootFire : MonoBehaviour
             GameObject clone = Instantiate(fire, shootingPoint.transform.position, transform.rotation);
             clone.GetComponent<Rigidbody2D>().velocity = direction * speed;
             nextFire = 0;
+            _audioSource.clip = _firehurl;
+            _audioSource.Play();
         }
     }
 }
