@@ -11,6 +11,7 @@ public class ShootFire : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private float speed = 4;
 
+
     void FixedUpdate()
     {
         CheckIfTimeToFire();
